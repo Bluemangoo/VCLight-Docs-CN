@@ -1,5 +1,7 @@
 # 简介
 
+[English](https://vclight.bluemangoo.net/) | 简体中文
+
 ## 概述
 
 VClight 是一个适用于 Vercel 的 Serverless 函数框架。

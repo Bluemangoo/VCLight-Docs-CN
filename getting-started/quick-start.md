@@ -91,7 +91,7 @@ $ npx vercel dev
 ```
 
 {% hint style="info" %}
-**小提示：** 你可以将调试指令添加到 `package.json` 中以使得接下来的步骤更加方便：
+**小提示：** 你可以将调试指令添加到 `package.json` 中以使其更加方便：
 
 ```json
 "scripts": {
@@ -112,7 +112,7 @@ $ npm run serve
 $ yarn run serve
 ```
 
-使用pnpm
+使用 pnpm
 ```shell
 $ pnpm run serve
 ```
