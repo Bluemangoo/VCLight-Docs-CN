@@ -1,3 +1,6 @@
 # Table of contents
 
-* [Page 1](README.md)
+## 开始
+
+* [简介](README.md)
+* [快速上手](quick-start.md)
