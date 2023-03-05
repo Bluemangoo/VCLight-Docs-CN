@@ -2,5 +2,5 @@
 
 ## 开始
 
-* [简介](README.md)
-* [快速上手](quick-start.md)
+* [简介](getting-started/introduction.md)
+* [快速上手](getting-started/quick-start.md)
