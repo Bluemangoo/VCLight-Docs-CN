@@ -1,4 +1,4 @@
-# 快速上手
+# 快速开始
 
 ## 在开始之前
 
@@ -6,6 +6,8 @@
 
 - 创建一个 [Vercel](https://vercel.com/) 账号
 - 创建一个 Vercel 项目
+
+你可以选择[直接开始](#创建一个-vclight-应用)或者[使用VCLight Cli开始](#使用-vclight-cli-开始)（推荐）。
 
 ## 创建一个 VCLight 应用
 
@@ -81,6 +83,35 @@ module.exports = async function(request, response) {
 {% hint style="info" %}
 现在的应用在访问时会报错，因为我们还没有为其处理请求并响应。在下一个章节，你将学会如何创建一个插件来响应请求。
 {% endhint %}
+
+## 使用 VCLight Cli 开始
+
+### 安装依赖
+
+首先，你需要安装 VCLight Cli。我们建议你全局安装这个包。
+
+使用 npm:
+```shell
+$ npm install -g vclight-cli
+```
+
+使用 yarn:
+```shell
+$ yarn global add vclight-cli
+```
+
+使用 pnpm:
+```shell
+$ pnpm global add vclight-cli
+```
+
+### 创建项目
+
+```shell
+$ vclight create $projectName
+```
+
+你需要将 `$projectName` 替换为你需要创建的项目名称。
 
 ## 本地调试
 
