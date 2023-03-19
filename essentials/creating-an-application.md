@@ -6,30 +6,10 @@
 
 ## 入口点文件
 
-<!-- 这是我们创建的入口点文件 `src/main.ts`
-
-```TypeScript
-import VCLight from "vclight";
-
-module.exports = async function(request, response) {
-    const app = new VCLight();
-    //在此处添加插件
-    await app.fetch(request, response);
-};
-``` -->
-
-首先，我们需要导入 VCLight 模块
-
-```TypeScript
-import VCLight from "vclight"
-```
-
-接下来，我们需要编写文件的主体部分。
-
 对于 Vercel 来说，它需要一个导出的函数。
 
 ```TypeScript
-module.exports = async function(request, response) {};
+module.exports = async function(request:VercelRequest, response:VercelResponse) {};
 ```
 
 在这个函数里面，我们可以编写我们的主体代码。

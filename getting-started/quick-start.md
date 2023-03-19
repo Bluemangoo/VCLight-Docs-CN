@@ -24,23 +24,26 @@ $ npm init -y
 
 ### 安装依赖
 
-接下来，我们需要安装 Vercel 和 VCLight 的包。
+接下来，我们需要安装 Vercel 和 VCLight 的包，还有ts类型支持。
 
 你可以选择你偏好的包管理器进行这一步。
 
 使用 npm:
 ```shell
 $ npm install vercel vclight
+$ npm install @vercel/node -D
 ```
 
 使用 yarn:
 ```shell
 $ yarn add vercel vclight
+$ yarn add @vercel/node -D
 ```
 
 使用 pnpm:
 ```shell
 $ pnpm add vercel vclight
+$ pnpm add @vercel/node -D
 ```
 
 ### 创建入口点
@@ -49,8 +52,9 @@ $ pnpm add vercel vclight
 
 ```TypeScript
 import VCLight from "vclight";
+import { VercelRequest, VercelResponse } from "@vercel/node";
 
-module.exports = async function(request, response) {
+module.exports = async function(request:VercelRequest, response:VercelResponse) {
     const app = new VCLight();
     //在此处添加插件
     await app.fetch(request, response);
@@ -102,7 +106,7 @@ $ yarn global add vclight-cli
 
 使用 pnpm:
 ```shell
-$ pnpm global add vclight-cli
+$ pnpm -g add vclight-cli
 ```
 
 ### 创建项目
