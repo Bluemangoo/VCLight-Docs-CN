@@ -9,3 +9,4 @@
 
 * [创建一个应用](essentials/creating-an-application.md)
 * [路由请求](essentials/routing-requests.md)
+* [创建一个插件](essentials/creating-a-plugin.md)
